@@ -1,14 +1,14 @@
 {
-  "name": "gulp-start-project",
+  "name": "makeup-kharkov-src",
   "version": "1.0.0",
-  "description": "Gulp SetUp",
+  "description": "Website for makeup master Ann",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArtemMakarchenko/gulp-start-project.git"
+    "url": "git+https://github.com/ArtemMakarchenko/makeup-kharkov-src.git"
   },
   "keywords": [
     "Gulp",
@@ -17,9 +17,9 @@
   "author": "Artem Makarchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArtemMakarchenko/gulp-start-project/issues"
+    "url": "https://github.com/ArtemMakarchenko/makeup-kharkov-src/issues"
   },
-  "homepage": "https://github.com/ArtemMakarchenko/gulp-start-project#readme",
+  "homepage": "https://github.com/ArtemMakarchenko/makeup-kharkov-src#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",

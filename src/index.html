@@ -1,14 +1,283 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     @@include('blocks/_head.html')
-    <title>Стартовый шаблон</title>
+    <title>Анна | Визажист | Бровист</title>
 </head>
+
 <body>
     @@include('blocks/_header.html')
     <main>
-        
+        <div class="container-fluid first-screen">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 first-screen-main">
+                    <div class="first-screen-main-list">
+                        <h2>Здесь только самое красивое:</h2>
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 point">
+                                        <img src="img/point.jpg" alt="точка">
+                                    </div>
+                                    <div class="col-md-11 point-text">
+                                        <p>Повседневный макияж</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 point">
+                                        <img src="img/point.jpg" alt="точка">
+                                    </div>
+                                    <div class="col-md-11 point-text">
+                                        <p>Свадебный макияж</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 point">
+                                        <img src="img/point.jpg" alt="точка">
+                                    </div>
+                                    <div class="col-md-11 point-text">
+                                        <p>Вечерний макияж</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 point">
+                                        <img src="img/point.jpg" alt="точка">
+                                    </div>
+                                    <div class="col-md-11 point-text">
+                                        <p>Коррекция и покраска бровей</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="first-screen-main-form">
+                        <h2>Записаться уже сейчас!</h2>
+                        <form class="form-inline" action="telegram.php" method="POST">
+                            <input name="name" class="form-control mr-sm-2" type="text" placeholder="Ваше Имя">
+                            <input name="phone" class="form-control mr-sm-2" type="tel" placeholder="Ваш телефон">
+                            <input name="date" class="form-control mr-sm-2 header-main-text-form-date" type="date"
+                                id="date" placeholder="Выберите дату">
+                            <button class="btn my-2 my-sm-0 button-form header-main-text-form-button"
+                                type="submit">Записаться</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="header-main-img col-md-4 no-gutters">
+                    <img src="img/background-header.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid advantages">
+            <a name="advantages"></a>
+            <h2 class="advantages__header">Мои преимущества:</h2>
+            <div class="advantages__main row">
+                <div class="advantages__item row align-items-center">
+                    <img src="img/certificate.jpg" alt="">
+                    <p>Сертифицированный специалист</p>
+                </div>
+                <div class="advantages__item row align-items-center">
+                    <img src="img/consultation.jpg" alt="">
+                    <p>Консультация по подбору<br />макияжа</p>
+                </div>
+                <div class="advantages__item row align-items-center">
+                    <img src="img/cosmetics.jpg" alt="">
+                    <p>Профессиональная косметика</p>
+                </div>
+                <div class="advantages__item row align-items-center">
+                    <img src="img/hands.jpg" alt="">
+                    <p>Индивидуальный подход</p>
+                </div>
+                <div class="advantages__item row align-items-center">
+                    <img src="img/lock.jpg" alt="">
+                    <p>Макияж любой сложности</p>
+                </div>
+                <div class="advantages__item row align-items-center">
+                    <img src="img/car.jpg" alt="">
+                    <p>Выезд на дом</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid services">
+            <a name="services"></a>
+            <h2 class="services__header">Услуги:</h2>
+            <div id="services-item-1" class="services__item row">
+                <p>Свадебный макияж</p>
+            </div>
+            <div id="services-item-2" class="services__item row">
+                <p>Дневной макияж</p>
+            </div>
+            <div id="services-item-3" class="services__item row">
+                <p>Вечерний макияж</p>
+            </div>
+            <div id="services-item-4" class="services__item row">
+                <p>Коррекция бровей</p>
+            </div>
+        </div>
+        <div class="container-fluid price">
+            <a name="price"></a>
+            <h2 class="price__header">Стоимость:</h2>
+            <div class="price__item row">
+                <p>- Коррекция бровей:</p>
+                <p>100 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Мужская коррекция бровей: </p>
+                <p>150 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Долговременная укладка бровей<br>(Ламинирование бровей): </p>
+                <p>450 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Коррекция + <br> Окрашивание бровей гель-краской ELAN: </p>
+                <p>200 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Коррекция + <br> Окрашивание бровей хной Brow Henna: </p>
+                <p>200 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Дневной макияж: </p>
+                <p>350 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Вечерний макияж: </p>
+                <p>500 грн</p>
+            </div>
+            <div class="price__item row">
+                <p>- Свадебный макияж: </p>
+                <p>650 грн</p>
+            </div>
+        </div>
+        <div class="container-fluid my-works">
+            <a name="my-works"></a>
+            <h2 my-works="my-works__header">Мои работы:</h2>
+            <div class="my-works__main row">
+                <img src="img/makeup-example-1.jpg" alt="work-1">
+                <img src="img/makeup-example-2.jpg" alt="work-2">
+                <img src="img/makeup-example-3.jpg" alt="work-3">
+                <img src="img/makeup-example-4.jpg" alt="work-4">
+                <img src="img/makeup-example-5.jpg" alt="work-5">
+                <img src="img/makeup-example-6.jpg" alt="work-6">
+                <img src="img/makeup-example-7.jpg" alt="work-7">
+                <img src="img/makeup-example-8.jpg" alt="work-8">
+                <img src="img/makeup-example-9.jpg" alt="work-9">
+                <img src="img/makeup-example-10.jpg" alt="work-10">
+                <img src="img/makeup-example-11.jpg" alt="work-11">
+                <img src="img/makeup-example-12.jpg" alt="work-12">
+            </div>
+        </div>
+        <div class="container-fluid about-me">
+            <a name="about-me"></a>
+            <h2 class="about-me__header">Обо мне :</h2>
+            <div class="about-me__main row">
+                <p>Меня зовут Анна, я – дипломированный визажист и мастер-бровист.
+                    Я регулярно посещаю тренинги и мастер-классы, выставки и различные мероприятия,
+                    связанные с индустрией красоты, чтобы совершенствовать свое мастерство и идти в ногу с
+                    последними
+                    тенденциями и модными течениями.<br />
+                    Работаю в студии, так же возможен выезд на дом или в фото-студии для вашего удобства.<br />
+                    Я наслаждаюсь своей работой ! Для меня ничего нет приятнее, чем видеть счастливые глаза своих
+                    клиенток, когда они любуются собой в зеркале и говорят мне "До встречи" прощаясь.</p>
+                <img src="img/photo4.jpg" alt="Анна Романовна">
+            </div>
+        </div>
+        <div class="container-fluid comments">
+            <a name="comments"></a>
+            <h2 class="comments__header">Отзывы:</h2>
+            <div class="comments__main row">
+                <div class="comments__item">
+                    <img src="img/comment-1.jpg">
+                    <h3>Анастасия</h3>
+                    <p>Анечка - настоящий профессионал . Она сумела создать мне образ,в котором объединила
+                        строгость,естественность, эмоциональность)
+                        Все получилось лучше чем я ожидала.Макияж продержался до самого утра<br />
+                        По качеству нареканий нет.<br />
+                        Буду повторно к ней обращаться и всем рекомендую</p>
+                </div>
+                <div class="comments__item">
+                    <img src="img/comment-2.jpg">
+                    <h3>Ника</h3>
+                    <p>Анют, огромное спасибо за бровки и макияж!<br />
+                        Учитывая, что моих бровей руки мастера не касались руки мастера около года, ты просто их
+                        воскресила
+                        Макияж превзошёл все мои ожидания, я была просто в восторге от отражения в зеркале)
+                        Отдельно хочу отметить его стойкость, ибо мне удалось с ним проходить целые сутки и если бы
+                        не банальный уход за кожей, мне кажется, что я бы с ним ходила гораздо больше<br />
+                        Ты супер, ещё раз огромное спасибо</p>
+                </div>
+                <div class="comments__item">
+                    <img src="img/comment-3.jpg">
+                    <h3>Лиза</h3>
+                    <p>Человек ,который любит свою работу , и готов ради счастливой улыбки клиента практически на все
+                        Вот как бы мне хотелось охарактеризовать Анюту.<br />
+                        Обращалась к ней ни раз .Коррекция и покраска бровей ,макияж : все было сделано качественно и
+                        красиво
+                        Огромным бонусом есть то , что Аня даёт ценные советы по уходу ( бровей в моем случае ) и всегда
+                        в хорошем настроении , что не мало важно в общении с клиентом !)<br />
+                        Добавлю фото с Нового года , макияж делала Аня , продержался до самого утра!)</p>
+                </div>
+                <div class="comments__item">
+                    <img src="img/comment-4.jpg">
+                    <h3>Даша</h3>
+                    <p>Анюта, спасибо большое за макияж!
+                        Ничего не поплыло и даже на следующее утро были минимальные изменение. Оочень довольна
+                        результатом, буду твоим постоянным клиентом
+                        Ещё раз спасибо большое за бровки, хожу не нарадуюсь. Вы фея кистей и богиня бровей.
+                        Анечка, я, как всегда, довольна, макияж оказался невероятно стойки и даже губки не съелись.
+                        Спасибо тебе большое. Всех подружек буду направлять к тебе!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid appointment">
+            <h2 class="appointment__header">Записаться уже сейчас !</h2>
+            <form class="appointment__form row" action="telegram.php" method="POST">
+                <div class="form-input"><input type="name" name="name" class="form-control mr-sm-2" type="text"
+                        placeholder="Ваше Имя"></div>
+                <div class="form-input"><input type="phone" name="phone" class="form-control mr-sm-2" type="tel"
+                        placeholder="Телефон"></div>
+                <div class="form-input"><input type="date" name="date" class="form-control" id="date"
+                        placeholder="Выберите дату"></div>
+                <div class="form-button"><button class="btn button-form" type="submit">Записаться</button></div>
+            </form>
+        </div>
+        <div class="container-fluid contacts">
+            <a name="contacts"></a>
+            <h2 class="contacts__header">Контакты:</h2>
+            <div class="contacts__main row">
+                <div class="contacts__main-text">
+                    <div class="contacts__main-text-item row">
+                        <img src="img/img-phone.png">
+                        <a href="tel:+380506770580">+38(050)677-05-80</a>
+                    </div>
+                    <div class="contacts__main-text-item row">
+                        <img src="img/img-mail.jpg">
+                        <a href="mailto:romanovna.anna.kh@gmail.com">romanovna.anna.kh@gmail.com</a>
+                    </div>
+                    <div class="contacts__main-text-item row">
+                        <img src="img/img-instagram.png">
+                        <a href="https://www.instagram.com/romanovnamakeup">@romanovnamakeup</a>
+                    </div>
+                </div>
+                <div class="contacts__main-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.3282076229098!2d36.23131811571531!3d50.005203279416406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0de280df01f%3A0x47f9c4b239dc480a!2z0L_Quy4g0KHQstC-0LHQvtC00YssIDcsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1571904767633!5m2!1sru!2sua"
+                        width="100%" height="250" frameborder="0" style="border:0; margin-top: 40px;" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </main>
-    @@include('blocks/_footer.html') 
+    @@include('blocks/_footer.html')
 </body>
+
 </html>
